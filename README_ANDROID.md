@@ -1,4 +1,4 @@
-# Doce de Leite — Projeto Android
+# Doce de Leite — Projeto Android .
 
 Projeto Android Studio baseado no arquivo `603.zip`.
 
