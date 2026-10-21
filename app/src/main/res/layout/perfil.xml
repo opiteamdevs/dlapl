@@ -1,0 +1,326 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#F8F9FA"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ScrollView
+			android:id="@+id/vscroll2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@id/bottom_nav">
+			<LinearLayout
+				android:id="@+id/linear20"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="16dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear21"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="20dp"
+					android:background="#FFFFFF"
+					android:gravity="center_horizontal"
+					android:orientation="vertical"
+					android:elevation="2dp">
+					<ImageView
+						android:id="@+id/imgAvatar"
+						android:layout_width="80dp"
+						android:layout_height="80dp"
+						android:background="#E0E0E0"
+						android:src="@drawable/default_image"
+						android:scaleType="centerCrop" />
+					<TextView
+						android:id="@+id/txtDisplayName"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:text="Nome de Exibição"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#222222" />
+					<TextView
+						android:id="@+id/txtUsername"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="2dp"
+						android:text="@username"
+						android:textSize="14sp"
+						android:textColor="#666666" />
+					<LinearLayout
+						android:id="@+id/linear22"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/txtFollowers"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="👥 0 seguidores"
+							android:textSize="13sp"
+							android:textStyle="bold"
+							android:textColor="#333333" />
+						<TextView
+							android:id="@+id/txtCandys"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="🍬 0 doces"
+							android:textSize="13sp"
+							android:textStyle="bold"
+							android:textColor="#FF9800"
+							android:layout_marginStart="16dp" />
+					</LinearLayout>
+					<Button
+						android:id="@+id/btnSeguir"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:background="#795548"
+						android:text="Seguir ➕"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:textAllCaps="false"
+						android:visibility="gone" />
+					<TextView
+						android:id="@+id/txtStatusBadge"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:paddingLeft="8dp"
+						android:paddingTop="2dp"
+						android:paddingRight="8dp"
+						android:paddingBottom="2dp"
+						android:background="#FF5722"
+						android:text="CONTA BANIDA"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:visibility="gone" />
+					<TextView
+						android:id="@+id/txtBio"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Biografia do utilizador aqui..."
+						android:textSize="14sp"
+						android:textColor="#444444" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/cardEdicao"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="16dp"
+					android:padding="16dp"
+					android:background="#FFFFFF"
+					android:orientation="vertical"
+					android:elevation="2dp"
+					android:visibility="gone">
+					<TextView
+						android:id="@+id/textview25"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Editar Meu Perfil ⚙️"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#333333" />
+					<TextView
+						android:id="@+id/textview26"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12dp"
+						android:text="Nome de Exibição:"
+						android:textSize="13sp"
+						android:textColor="#555555" />
+					<EditText
+						android:id="@+id/edEditDisplayName"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:padding="10dp"
+						android:background="#F1F3F4"
+						android:textSize="14sp" />
+					<TextView
+						android:id="@+id/textview27"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:text="Username (\\@):"
+						android:textSize="13sp"
+						android:textColor="#555555" />
+					<EditText
+						android:id="@+id/edEditUsername"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:padding="10dp"
+						android:background="#F1F3F4"
+						android:textSize="14sp" />
+					<TextView
+						android:id="@+id/textview28"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:text="URL da Foto de Perfil (Avatar):"
+						android:textSize="13sp"
+						android:textColor="#555555" />
+					<EditText
+						android:id="@+id/edEditAvatar"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:padding="10dp"
+						android:background="#F1F3F4"
+						android:textSize="14sp"
+						android:hint="https://..." />
+					<TextView
+						android:id="@+id/textview29"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:text="Biografia:"
+						android:textSize="13sp"
+						android:textColor="#555555" />
+					<EditText
+						android:id="@+id/edEditBio"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:padding="10dp"
+						android:background="#F1F3F4"
+						android:textSize="14sp"
+						android:lines="3"
+						android:gravity="top|start"
+						android:inputType="textMultiLine" />
+					<Button
+						android:id="@+id/btnSalvarPerfil"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:background="#795548"
+						android:text="Salvar Alterações 💾"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:textAllCaps="false" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/textview30"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="8dp"
+					android:text="Posts Feitos por Este Utilizador 📝"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#333333" />
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/rvUserPosts"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:nestedScrollingEnabled="false" />
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+			android:id="@+id/bottom_nav"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:background="#FFFFFF"
+			android:orientation="horizontal"
+			android:weightSum="3"
+			android:elevation="8dp"
+			android:layout_alignParentBottom="true">
+			<LinearLayout
+				android:id="@+id/nav_feed"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:alpha="0.5"
+				android:focusable="true">
+				<TextView
+					android:id="@+id/textview61"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="🏠"
+					android:textSize="18sp" />
+				<TextView
+					android:id="@+id/textview62"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Feed"
+					android:textSize="12sp"
+					android:textColor="#795548" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/nav_criar"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:alpha="0.5"
+				android:focusable="true">
+				<TextView
+					android:id="@+id/textview63"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="➕"
+					android:textSize="18sp" />
+				<TextView
+					android:id="@+id/textview64"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Criar"
+					android:textSize="12sp"
+					android:textColor="#795548" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/nav_perfil"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:alpha="1.0"
+				android:focusable="true">
+				<TextView
+					android:id="@+id/textview65"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="👤"
+					android:textSize="18sp" />
+				<TextView
+					android:id="@+id/textview66"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Perfil"
+					android:textSize="12sp"
+					android:textStyle="bold"
+					android:textColor="#795548" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

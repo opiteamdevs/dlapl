@@ -1,0 +1,29 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<WebView
+		android:id="@+id/webview1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone" />
+	<RelativeLayout
+		android:id="@+id/splashLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFAF0">
+		<TextView
+			android:id="@+id/textview1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="🍮 Doce de Leite"
+			android:textSize="41sp"
+			android:textStyle="bold"
+			android:textColor="#8D6E63"
+			android:translationY="-16.0dp"
+			android:layout_centerInParent="true" />
+	</RelativeLayout>
+</RelativeLayout>
